@@ -1,0 +1,25 @@
+﻿<Window x:Class="EkzLavrov.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        WindowStartupLocation="CenterScreen"
+        xmlns:local="clr-namespace:EkzLavrov"
+        mc:Ignorable="d"
+        Title="Autorise" Height="450" Width="800" Background="#FFFFFCD6">
+    <Grid>
+
+        <StackPanel Height="100" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Image Source="/logo-01.jpg"/>
+        </StackPanel>
+            
+        <StackPanel Height="150" Width="250">
+            <TextBlock Text="Login" FontSize="12"/>
+            <TextBox x:Name="txb_login"/>
+            <TextBlock Text="Password" FontSize="12"/>
+            <TextBox x:Name="txb_Password"/>
+            <Button x:Name="signin" Click="btn_sign" Content="Sign" FontSize="12" Background="#FFB5D5CA"/>
+            <Button x:Name="signin1" Click="btn_sign1" Content="Sign" Visibility="Hidden" FontSize="12" Background="#FFB5D5CA"/>
+        </StackPanel>
+    </Grid>
+</Window>
